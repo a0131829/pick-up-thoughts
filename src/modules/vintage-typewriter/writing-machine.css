@@ -1,0 +1,39 @@
+/* Keep the original animated meadow behind the watercolor machine. */
+.hero-copy:has(.writing-machine){padding:90px 20px 40px;justify-content:center}
+.writing-machine{width:33.333vw;position:relative;font-family:'Courier New','Songti SC','SimSun',monospace}
+.machine-stage{position:relative;width:100%;aspect-ratio:1/1.05}
+.machine-canvas{position:absolute;inset:0;cursor:text}
+.machine-canvas canvas{display:block;width:100%;height:100%}
+/* Native editor owns IME/selection; visible ink is rendered on the Three.js sheet. */
+.machine-paper-input{position:absolute;left:22%;top:12%;width:56%;height:27%;overflow:hidden}
+.shredder .machine-paper-input{left:33%;width:34%;top:12%;height:26%}
+.machine-paper-input textarea{display:block;width:100%;height:100%;padding:8px 2px;border:0;border-radius:0;outline:none;resize:none;background:transparent;color:transparent;caret-color:transparent;font:16px/1.8 'Courier New','Songti SC',serif;scrollbar-width:none}
+.machine-paper-input textarea::placeholder{color:transparent}
+.machine-paper-input textarea::selection{background:transparent}
+.machine-actions{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:-3%;position:relative}
+.machine-actions button{padding:10px 22px;border-radius:100px;color:#ffffffe0;font:14px/1.5 "Huiwen Mincho","Songti SC",serif;transition:background .15s}
+.machine-actions button:hover{background:#ffffff18}
+.machine-actions button:disabled{opacity:.4;cursor:default}
+.machine-actions .machine-sound{padding:6px 10px;color:#ffffff90;font-size:11px}
+.machine-status{min-height:2.8em;margin:12px auto 0;max-width:95%;font:12px/1.7 'Courier New','Songti SC',serif;color:#e1d7bf;text-align:center}
+.machine-toggle{position:absolute;top:clamp(110px,18svh,220px);left:50%;right:auto;transform:translateX(-50%);white-space:nowrap;z-index:3;display:flex;align-items:center;gap:6px;padding:4px;color:#ffffffb0}
+.machine-toggle button{padding:7px 14px;color:inherit;font:13px/1.5 "Huiwen Mincho","Songti SC",serif;border-radius:100px}
+.machine-toggle button[aria-pressed=true]{background:#ffffff16;color:#fff}
+.machine-toggle span{opacity:.4}
+.machine-fallback .machine-paper-input{background:#efe0bf;height:40%;padding:12px}
+.machine-fallback textarea{color:#443b30;caret-color:#443b30}
+.machine-fallback textarea::placeholder{color:#786954}
+@media(max-width:800px){.writing-machine{width:min(78vw,430px)}.machine-toggle{top:clamp(100px,18svh,180px)}.hero-copy:has(.writing-machine){padding-top:145px}.machine-actions{gap:8px}.machine-actions button{padding:7px 15px}}
+@media(prefers-reduced-motion:reduce){.machine-actions button{transition:none}}
+
+.machine-image-clear{background:transparent;color:#ffffff90;font-size:11px;margin:8px auto 0;padding:4px 8px;display:block}
+.typewriter .machine-paper-input{top:34%;height:12%}
+
+.machine-canvas{filter:drop-shadow(0 16px 16px #0005)}
+.machine-foreground-grass{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+
+/* Wider transparent drawing area lets wind carry fragments beyond the machine. */
+.machine-canvas canvas{position:absolute;left:-60%;top:-20%;width:220%;height:200%;pointer-events:none}
+
+.paper-wind-overlay{position:fixed;inset:0;z-index:2147483000;pointer-events:none;display:none}
+.machine-actions{z-index:3}

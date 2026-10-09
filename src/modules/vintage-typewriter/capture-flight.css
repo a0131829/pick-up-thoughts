@@ -1,0 +1,17 @@
+.capture-flight{position:fixed;left:0;top:0;z-index:1000;pointer-events:none;will-change:transform;--insert:0;--fold:0;--seal:0;--flap-layer:1;--star:0}
+.capture-envelope{position:absolute;width:144px;height:96px;left:-72px;top:-48px;background:#c9b58d;border-radius:3px;box-shadow:0 8px 22px #0005;opacity:calc(1 - var(--star));perspective:500px}
+.envelope-pocket{position:absolute;inset:-50px 0 0;overflow:hidden;z-index:2}
+.envelope-paper{position:absolute;top:8px;left:12px;right:12px;height:76px;background:repeating-linear-gradient(#efe1c1 0 14px,#b3a17e 15px,#efe1c1 16px);transform:translateY(calc(var(--insert)*48px));border-radius:2px;box-shadow:0 1px 3px #705c3820}
+.envelope-front{position:absolute;z-index:3;inset:0;background:#e7d6b4;clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%)}
+.envelope-flap{position:absolute;z-index:var(--flap-layer);inset:0;background:#f1e2c3;clip-path:polygon(0 0,100% 0,50% 57%);transform-origin:top;transform:rotateX(calc((1 - var(--fold))*165deg));filter:drop-shadow(0 1px 1px #0003)}
+.envelope-seal{position:absolute;z-index:5;width:12px;height:12px;border-radius:50%;background:#977959;top:47px;left:66px;opacity:var(--seal)}
+.flight-star{position:absolute;left:-50px;top:-60px;font:100px/1 serif;color:#fff4cc;opacity:var(--star);text-shadow:0 0 35px #ffdf85}
+.captured-star{position:absolute;left:0;top:0;width:24px;height:24px;margin:-12px 0 0 -12px;padding:0;border:0;background:transparent!important;color:#fff0bb;font:20px/24px serif;text-shadow:0 0 12px #ffe09b;z-index:4;cursor:pointer}
+.captured-star:hover,.captured-star:focus-visible{color:white;text-shadow:0 0 18px #fff}
+.capture-detail{position:fixed;inset:0;z-index:300;background:#000b;display:grid;place-items:center;padding:24px;backdrop-filter:blur(8px)}
+.capture-detail article{position:relative;width:min(560px,100%);max-height:80svh;overflow:auto;background:#e9ddc4;color:#40392f;border-radius:6px;padding:40px 30px;box-shadow:0 12px 60px #0007}
+.capture-detail p{white-space:pre-wrap;overflow-wrap:anywhere}.capture-detail img{display:block;max-width:100%;max-height:40vh;object-fit:contain;margin:18px auto}.capture-detail button{position:absolute;right:12px;top:10px;background:transparent}.capture-detail small{display:block;opacity:.6;margin-top:24px}
+.writing-machine.is-collecting .machine-paper-input{pointer-events:none}
+
+.envelope-paper,.envelope-flap{will-change:transform;backface-visibility:hidden}
+.capture-envelope,.flight-star{will-change:opacity}

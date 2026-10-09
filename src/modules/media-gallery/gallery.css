@@ -1,0 +1,45 @@
+.gallery-heading{display:flex;justify-content:space-between;gap:24px;color:#aaa99f;margin:22px 0 32px;font-size:14px}.gallery-heading span{white-space:nowrap}.gallery-controls{display:flex;justify-content:space-between;gap:24px;margin-bottom:38px;align-items:center}.gallery-controls button{padding:8px 14px;background:transparent;color:#91958d;font-size:14px}.gallery-controls button[aria-pressed=true]{color:#f1eee0;border-bottom:1px solid #e2decc}.gallery-controls input{background:transparent;border:0;border-bottom:1px solid #ffffff35;color:#e4e4d9;padding:10px;font:inherit;font-size:13px}.gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 28px}.gallery-work{background:transparent!important;text-align:left;padding:0;color:#eae7dc}.gallery-cover{height:270px;display:flex;align-items:center;justify-content:center;background:#ffffff06;overflow:hidden}.gallery-cover img{height:86%;width:82%;object-fit:contain;transition:transform .35s}.gallery-work:hover img{transform:translateY(-5px) scale(1.025)}.gallery-cover span{padding:24px;font-size:24px}.gallery-work small{display:block;color:#8d958b;font-size:11px;margin:16px 0 8px}.gallery-work h3{font-size:22px;margin:0 0 8px}.gallery-work>p{font-size:12px;color:#a1a699}.gallery-dialog{position:fixed;inset:0;margin:auto;width:min(760px,92vw);max-height:86vh;overflow:auto;background:#121612;color:#e7e6d8;border:1px solid #ffffff22;border-radius:14px;padding:36px}.gallery-dialog::backdrop{background:#000b;backdrop-filter:blur(8px)}.gallery-close{float:right;background:transparent;color:#c5cbbd;padding:8px}.gallery-detail-cover{height:190px;max-width:160px;object-fit:contain;float:left;margin:0 28px 24px 0}.gallery-dialog h2{font-size:32px;margin:18px 0}.gallery-dialog small{color:#a3ad9c}.gallery-original{clear:both;white-space:pre-wrap;line-height:2;padding-top:24px;font-size:15px}.gallery-dialog blockquote{white-space:pre-wrap;line-height:2;margin:24px 0;padding-left:18px;border-left:1px solid #87957b}@media(max-width:700px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.gallery-cover{height:210px}.gallery-controls{align-items:stretch;flex-direction:column;gap:16px}.gallery-controls button{padding:8px 10px}.gallery-heading{font-size:12px}.gallery-work h3{font-size:19px}.gallery-dialog{padding:24px}}@media(prefers-reduced-motion:reduce){.gallery-cover img{transition:none}}
+/* Slightly smaller works, with card typography reduced by 2pt. */
+.gallery-work{width:90%;justify-self:center;align-self:start}
+.gallery-cover{height:230px}
+.gallery-cover span{font-size:calc(24px - 2pt)}
+.gallery-work small{font-size:calc(11px - 2pt);margin:12px 0 6px}
+.gallery-work h3{font-size:calc(22px - 2pt);margin-bottom:6px}
+.gallery-work>p{font-size:calc(12px - 2pt)}
+@media(max-width:700px){.gallery-cover{height:180px}.gallery-work h3{font-size:calc(19px - 2pt)}}
+
+/* Compact gallery spacing, retaining the quiet collection label. */
+#connect.philosophy{padding-bottom:36px}
+#revisit.services{padding-top:24px;padding-bottom:60px}
+.gallery-eyebrow{text-align:right;margin:0 0 10px}
+.gallery-heading{margin:10px 0 18px}
+.gallery-controls{margin-bottom:22px;gap:16px}
+.gallery-grid{gap:24px 16px}
+.gallery-work{width:100%}
+.gallery-cover{height:220px}
+@media(max-width:700px){#connect.philosophy{padding-bottom:24px}#revisit.services{padding-top:16px;padding-bottom:40px}.gallery-grid{gap:20px 12px}.gallery-cover{height:170px}.gallery-controls{gap:10px;margin-bottom:18px}}
+/* Dense rows keep each work in its own grid cell, including wrapped titles. */
+.gallery-grid{gap:10px 8px}
+.gallery-cover{height:200px}
+.gallery-work small{margin:7px 0 3px}
+.gallery-work h3{margin-bottom:3px;line-height:1.35;overflow-wrap:anywhere}
+.gallery-work>p{line-height:1.5;overflow-wrap:anywhere}
+.gallery-controls{margin-bottom:12px}
+@media(max-width:700px){.gallery-grid{gap:10px 6px}.gallery-cover{height:158px}}
+
+/* Near-touching covers; titles shrink another 2pt without truncation. */
+.gallery-grid{gap:6px 4px}
+.gallery-cover img{width:98%;height:98%}
+.gallery-work h3{font-size:calc(22px - 4pt);line-height:1.25;margin-bottom:2px}
+.gallery-work small{margin:4px 0 2px}
+.gallery-work>p{margin:0;line-height:1.35}
+@media(max-width:700px){.gallery-grid{gap:6px 4px}.gallery-work h3{font-size:calc(19px - 4pt)}}
+/* Flexible columns preserve a usable card width at any viewport size. */
+.gallery-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,160px),1fr));column-gap:1px}
+
+.gallery-wave{background:#08090b;border-radius:12px;overflow:hidden}.gallery-wave-actions{display:flex;align-items:center;gap:16px;padding:12px 20px 22px;color:#a9adb5;font-size:12px}.gallery-wave-actions span{margin-right:auto}.gallery-wave-actions button,.gallery-wave-actions select{font:inherit;color:inherit;background:#17191e;border:1px solid #ffffff25;border-radius:20px;padding:10px 14px}.gallery-wave-actions select{max-width:220px}#revisit.services{max-width:none;padding-left:0;padding-right:0}#revisit>.label,#revisit>.gallery-heading,#revisit>.gallery-controls{margin-left:5vw;margin-right:5vw}@media(max-width:600px){.gallery-wave-actions{flex-wrap:wrap}.gallery-wave-actions span{width:100%}}
+
+#revisit.services{position:relative;isolation:isolate;overflow:hidden;background:#08090b}
+#revisit.services > .film{z-index:-2}
+#revisit.services::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(#08090b55,#08090b22 65%,#08090b)}
+#revisit .gallery-wave{background:transparent}

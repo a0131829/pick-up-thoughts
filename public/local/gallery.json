@@ -1,0 +1,68 @@
+[
+  {
+    "id": "demo-work-0",
+    "title": "Quiet Pages",
+    "creator": "Glean Demo",
+    "kind": "book",
+    "status": "planned",
+    "cover": "/local/media/demo-0.svg",
+    "text": "虚构示例作品，用于展示封面浏览与详情交互。",
+    "quote": "给每一个念头，留一点空间。",
+    "excerpts": []
+  },
+  {
+    "id": "demo-work-1",
+    "title": "Small Wonders",
+    "creator": "Glean Demo",
+    "kind": "book",
+    "status": "planned",
+    "cover": "/local/media/demo-1.svg",
+    "text": "虚构示例作品，用于展示封面浏览与详情交互。",
+    "quote": "给每一个念头，留一点空间。",
+    "excerpts": []
+  },
+  {
+    "id": "demo-work-2",
+    "title": "After Rain",
+    "creator": "Glean Demo",
+    "kind": "book",
+    "status": "planned",
+    "cover": "/local/media/demo-2.svg",
+    "text": "虚构示例作品，用于展示封面浏览与详情交互。",
+    "quote": "给每一个念头，留一点空间。",
+    "excerpts": []
+  },
+  {
+    "id": "demo-work-3",
+    "title": "Open Sky",
+    "creator": "Glean Demo",
+    "kind": "book",
+    "status": "planned",
+    "cover": "/local/media/demo-3.svg",
+    "text": "虚构示例作品，用于展示封面浏览与详情交互。",
+    "quote": "给每一个念头，留一点空间。",
+    "excerpts": []
+  },
+  {
+    "id": "demo-work-4",
+    "title": "Night Notes",
+    "creator": "Glean Demo",
+    "kind": "book",
+    "status": "planned",
+    "cover": "/local/media/demo-4.svg",
+    "text": "虚构示例作品，用于展示封面浏览与详情交互。",
+    "quote": "给每一个念头，留一点空间。",
+    "excerpts": []
+  },
+  {
+    "id": "demo-work-5",
+    "title": "Soft Light",
+    "creator": "Glean Demo",
+    "kind": "book",
+    "status": "planned",
+    "cover": "/local/media/demo-5.svg",
+    "text": "虚构示例作品，用于展示封面浏览与详情交互。",
+    "quote": "给每一个念头，留一点空间。",
+    "excerpts": []
+  }
+]

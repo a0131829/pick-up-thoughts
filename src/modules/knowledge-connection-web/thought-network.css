@@ -1,0 +1,80 @@
+.thought-network{background:#050707;overflow:hidden;margin-bottom:56px;color:#e2e7e5}.network-top{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;font-size:12px;color:#aab5b1}.network-top button{background:transparent;padding:8px;color:#d6dcd8}.network-stage{height:740px;position:relative;isolation:isolate;overflow:clip}.network-stage canvas{display:block;width:100%;height:100%;touch-action:pan-y}.network-hint{position:absolute;bottom:25px;left:0;right:0;text-align:center;font-size:12px;color:#8d9a95;pointer-events:none}.network-tags{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;padding:20px}.network-tags button{background:transparent;color:#aebbb6;font-size:12px;padding:7px 3px;transition:color .25s,transform .25s;border-bottom:1px solid transparent}.network-tags button:hover{color:#fff;transform:translateY(-2px)}.network-tags button[aria-pressed=true]{color:#f1ead3;border-color:#f1ead3}.network-footnote{text-align:center;padding:0 16px 22px;font-size:10px;color:#839189}.thought-beam{position:absolute;inset:10% -8% -25%;background:radial-gradient(ellipse at 50% 0,#fcfaec 0,#e1e1d5 45%,#879188 100%);clip-path:polygon(50% 0,100% 100%,0 100%);opacity:0;pointer-events:none;transform-origin:50% 0;z-index:1}.thought-beam:after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' opacity='.12' filter='url(%23n)' d='M0 0h150v150H0z'/%3E%3C/svg%3E");mix-blend-mode:multiply}.thought-lamp{position:absolute;top:3%;left:50%;width:60px;height:85px;opacity:0;background:none!important;z-index:4;transform-origin:50% 0;cursor:pointer}.lamp-wire{position:absolute;top:0;left:29px;width:1px;height:45px;background:#a8ada6}.lamp-shade{position:absolute;top:41px;left:13px;width:34px;height:22px;background:#edece0;clip-path:polygon(36% 0,64% 0,100% 100%,0 100%)}.lamp-bulb{position:absolute;top:64px;left:24px;width:12px;height:12px;background:#ffffef;border-radius:50%;box-shadow:0 0 20px #fff9}.lamp-cord{position:absolute;top:10%;left:calc(50% + 40px);height:66px;width:20px;border-left:1px solid #777a6c;background:transparent;color:#d6d5c4;z-index:5;cursor:ns-resize;touch-action:none;transition:transform .15s}.thought-reader{position:absolute;z-index:3;top:29%;left:20%;right:20%;max-height:65%;overflow:auto;padding:12px 24px 25px;color:#222b25;text-align:center;scrollbar-width:thin;scrollbar-color:#737b6b transparent}.reader-meta{font-size:11px;color:#5b655b}.thought-reader h3{font-size:36px;margin:22px 0}.thought-reader .reader-text{font-size:17px;line-height:2;white-space:pre-wrap;color:#29342b;text-align:left}.thought-reader small{display:block;font-size:10px;color:#687163;margin-top:16px}.reader-related{margin-top:24px;border-top:1px solid #394c3025;padding-top:14px}.reader-related>span{display:block;font-size:11px;color:#65715f}.reader-related button,.reader-back{background:transparent;color:#293c29;font-size:13px;padding:10px;transition:transform .2s}.reader-related button:hover,.reader-back:hover{transform:translateX(4px)}.reader-back{margin-top:12px}.thought-network button:focus-visible{outline:1px solid #a5af92;outline-offset:4px}@media(max-width:700px){.network-stage{height:730px}.network-top{padding:14px 16px}.network-tags{gap:8px;padding:12px}.network-tags button{font-size:11px}.thought-reader{left:7%;right:7%;top:30%;padding:10px 16px}.thought-reader h3{font-size:28px}.thought-reader .reader-text{font-size:15px;line-height:1.9}.thought-beam{inset:10% -55% -25%}.thought-network{margin-bottom:32px}}@media(prefers-reduced-motion:reduce){.thought-network *{transition:none!important}}
+/* Keep the reading column inside the widening light cone. */
+.thought-beam{left:-90%;right:-90%}.thought-reader{top:35%;left:25%;right:25%;max-height:60%}@media(max-width:700px){.thought-beam{left:-170%;right:-170%}.thought-reader{left:9%;right:9%;top:33%;max-height:63%}}
+
+/* The scene must clip paint without becoming a focus-scroll container. */
+.network-stage{overflow:clip}.thought-beam{top:calc(3% + 105px)}.thought-lamp{padding:0}.lamp-cord{top:calc(3% + 58px)}
+.archive-library{padding:22px 28px;border-top:1px solid #ffffff18}.archive-library>summary{cursor:pointer;font-size:16px}.archive-library>summary span{float:right;font-size:12px;color:#929c91}.archive-library>p{font-size:11px;color:#879283;margin:16px 0}.archive-records{text-align:left;margin-top:22px}.archive-records>input{width:100%;padding:12px;background:transparent;color:inherit;border:1px solid currentColor;border-radius:4px;font:inherit;font-size:14px}.archive-filter{display:flex;align-items:center;gap:8px;font-size:12px;margin:12px 0}.archive-filter input{width:14px;height:14px}.archive-count{font-size:12px;opacity:.65;margin:12px 0}.archive-record{border-top:1px solid #87937b55;padding:12px 0}.archive-record summary{cursor:pointer;font-size:15px;line-height:1.6}.archive-record small{display:block;font-size:10px;opacity:.65;margin:6px 0}.archive-original{white-space:pre-wrap;overflow-wrap:anywhere;font-size:15px;line-height:1.95;margin:18px 0;user-select:text}.archive-records>button{background:transparent;color:inherit;padding:14px 0;font-size:13px}.thought-reader .archive-records{padding-top:8px}
+
+/* Lamp editorial layout: introduction, rule, themes, oversized grounded name. */
+.thought-reader{top:31%;left:23%;right:23%;max-height:43%;padding:8px 12px 18px;text-align:left}
+.reader-introduction{font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.75;font-weight:400;color:#20231f;margin:0;max-width:42em}
+.thought-reader .reader-related{border-top:1px solid #252a2580;margin-top:22px;padding-top:15px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.reader-related button{padding:5px 0;font-size:14px;color:#151915}.reader-related button[aria-pressed=true]{text-decoration:underline;text-underline-offset:5px}
+.reader-back{padding-left:0;font-size:11px;opacity:.7}
+.reader-cluster-backdrop{position:absolute;z-index:2;left:3%;right:3%;bottom:0;pointer-events:none;color:#080a08}
+.reader-cluster-backdrop svg{display:block;width:100%;height:auto;overflow:visible}
+.reader-cluster-backdrop text{font-family:'Huiwen Mincho',serif;font-size:150px;fill:currentColor}
+@media(max-width:700px){.thought-reader{top:30%;left:10%;right:10%;max-height:49%;padding:8px 12px}.reader-introduction{font-size:12px;line-height:1.8}.reader-related button{font-size:13px}.reader-cluster-backdrop{left:2%;right:2%;bottom:12px}}
+/* Center the lamp's editorial column and keep one extra line of air. */
+.thought-reader{top:calc(31% + 22px);max-height:calc(43% - 22px);text-align:center}
+.reader-introduction{margin-inline:auto;text-align:center}.thought-reader .reader-related{justify-content:center}
+.thought-reader .archive-records,.thought-reader .archive-original,.thought-reader .archive-records input{text-align:center}.thought-reader .archive-filter{justify-content:center}.reader-back{padding-inline:10px}
+.reader-cluster-backdrop .cluster-outline{fill:none;stroke:currentColor;stroke-width:1;stroke-linejoin:round}
+.lamp-cursor{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:0;color:#151713}
+.lamp-cursor-dot,.lamp-cursor-trail{position:absolute;top:0;left:0}
+.lamp-cursor-dot:after{content:'';position:absolute;width:3px;height:3px;background:currentColor;border-radius:50%;transform:translate(-50%,-50%)}
+.lamp-cursor-trail i,.lamp-cursor-trail b{position:absolute;display:block;transition:transform .22s,width .22s,height .22s,opacity .22s;background:currentColor}
+.lamp-cursor-trail i:nth-child(1){width:1px;height:4px;transform:translate(-.5px,-12px)}.lamp-cursor-trail i:nth-child(2){width:1px;height:4px;transform:translate(-.5px,8px)}.lamp-cursor-trail i:nth-child(3){width:4px;height:1px;transform:translate(-12px,-.5px)}.lamp-cursor-trail i:nth-child(4){width:4px;height:1px;transform:translate(8px,-.5px)}
+.lamp-cursor-trail b{width:10px;height:10px;border:1px solid currentColor;background:transparent;transform:translate(-50%,-50%) rotate(45deg) scale(.4);opacity:0}
+.lamp-cursor[data-state=interactive] i{opacity:0;transform:translate(0,0)}.lamp-cursor[data-state=interactive] b{opacity:1;transform:translate(-50%,-50%) rotate(0) scale(1)}.lamp-cursor.is-pressed b{background:currentColor;transform:translate(-50%,-50%) scale(.7)}
+.lamp-cursor[data-state=text] i:nth-child(1){height:9px;transform:translate(-.5px,-9px)}.lamp-cursor[data-state=text] i:nth-child(2){height:9px;transform:translate(-.5px,0)}.lamp-cursor[data-state=text] i:nth-child(3){width:5px;transform:translate(-2.5px,-9px)}.lamp-cursor[data-state=text] i:nth-child(4){width:5px;transform:translate(-2.5px,9px)}
+@media(pointer:fine){.lamp-pointer-active:not(:has(dialog[open])):not(:has(.lamp-scene[inert])),.lamp-pointer-active:not(:has(dialog[open])):not(:has(.lamp-scene[inert])) *{cursor:none!important}}
+@media(max-width:700px){.thought-reader{top:calc(30% + 22px);max-height:calc(49% - 22px)}}
+
+/* Clip scrolling paper and text to the same moving triangle as the lamp beam. */
+.lamp-content-clip{position:absolute;inset:0;z-index:3;pointer-events:none;clip-path:polygon(50% 13%,100% 100%,0 100%)}
+.lamp-content-clip .thought-reader{pointer-events:auto}
+
+/* Apply distance attenuation over both the illuminated surface and its contents. */
+.thought-beam{background:#f4f0df}
+.lamp-distance-falloff{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;background:radial-gradient(circle at var(--light-x,50%) var(--light-y,13%),rgba(3,6,5,0) 0px,rgba(3,6,5,0) var(--light-radius,360px),rgba(3,6,5,.16) calc(var(--light-radius,360px) + var(--light-feather,200px)*.22),rgba(3,6,5,.48) calc(var(--light-radius,360px) + var(--light-feather,200px)*.58),rgba(3,6,5,.8) calc(var(--light-radius,360px) + var(--light-feather,200px)),rgba(3,6,5,.9) calc(var(--light-radius,360px) + var(--light-feather,200px)*1.5))}
+
+/* Lamp, cord attachment and light share the ceiling pivot and rotation. */
+.lamp-cord-rig{position:absolute;top:3%;left:50%;width:0;height:0;transform-origin:0 0;z-index:4}
+.lamp-cord{top:84px;left:-6px;width:44px;height:calc(46px + var(--cord-pull,0px));padding:0;border:0;color:#77786c;transition:height .18s ease-out;background:transparent!important}
+.lamp-cord:before{content:'';position:absolute;left:21px;top:0;bottom:13px;width:1.5px;background:#858678;box-shadow:0 0 1px #fff5}
+.cord-knob{position:absolute;left:17px;bottom:7px;width:10px;height:10px;border-radius:50%;background:#6e7062;border:1px solid #c8c9b5;box-shadow:0 2px 3px #0004}
+.lamp-cord:hover .cord-knob{background:#a9aa94}.lamp-cord:active{transition:none}
+
+/* The cord attaches behind the enlarged shade, not beside its silhouette. */
+.thought-lamp{z-index:5;height:64px}
+
+/* Continue the scene behind its labels and count, then dissolve into the page. */
+#connect.philosophy{padding-top:54px}#connect.philosophy>h2{margin-bottom:24px}
+.thought-network{margin-bottom:24px;background:#050707}
+.network-tail{position:relative;isolation:isolate;padding-bottom:64px;background:#050707}
+.thought-network.is-reading .network-tail{background:radial-gradient(circle at var(--light-x,50%) var(--light-y,13%),rgba(3,6,5,0) 0px,rgba(3,6,5,0) var(--light-radius,360px),rgba(3,6,5,.16) calc(var(--light-radius,360px) + var(--light-feather,200px)*.22),rgba(3,6,5,.48) calc(var(--light-radius,360px) + var(--light-feather,200px)*.58),rgba(3,6,5,.8) calc(var(--light-radius,360px) + var(--light-feather,200px)),rgba(3,6,5,.9) calc(var(--light-radius,360px) + var(--light-feather,200px)*1.5)),#f4f0df}
+.network-tail:after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(to bottom,transparent 0%,transparent 38%,#000 100%)}
+.network-tail .network-tags,.network-tail .network-footnote{position:relative;z-index:1}
+.network-tail .network-footnote{padding-bottom:12px}
+@media(max-width:700px){#connect.philosophy{padding-top:32px}#connect.philosophy>h2{margin-bottom:18px}.thought-network{margin-bottom:16px}.network-tail{padding-bottom:48px}}
+
+/* Reserve a separate baseline area: wide canvases must not enlarge text into notes. */
+.network-stage{--cluster-title-height:clamp(86px,16vw,150px)}
+.reader-cluster-backdrop{left:5%;right:5%;bottom:12px;height:var(--cluster-title-height)}
+.reader-cluster-backdrop svg{height:100%;width:100%}
+.lamp-content-clip .thought-reader{bottom:calc(var(--cluster-title-height) + 36px);max-height:none}
+#connect.philosophy{padding-top:32px}
+@media(max-width:700px){#connect.philosophy{padding-top:22px}}
+
+/* Native modal dialogs sit in the browser top layer, above the scene cursor. */
+.network-stage:has(dialog[open]) .lamp-cursor{visibility:hidden}
+.paper-dialog,.paper-dialog::backdrop{cursor:default}
+.paper-dialog .paper-fulltext{cursor:text}
+.paper-dialog button{cursor:pointer}
+
+.lamp-scene{position:absolute;inset:0;overflow:clip;pointer-events:none;transform-origin:50% 50%}
+.lamp-scene .thought-lamp,.lamp-scene .lamp-cord{pointer-events:auto}
+.lamp-scene[inert]{pointer-events:none}
+.lamp-scene[inert] .lamp-cursor{visibility:hidden}
