@@ -1,4 +1,4 @@
-# Glean · Interactive Garden
+# pick-up-thoughts · 拾念
 
 一个可以收集念头、探索关联、回看媒体的交互花园。React + TypeScript + Vite，拆成三个可阅读、可修改的模块。
 
